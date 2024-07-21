@@ -1,6 +1,11 @@
+<script>
+import LayoutNav from "@/views/Layout/components/LayoutNav.vue";
+import LayoutHeader from '@/views/Layout/components/LayoutHeader.vue';
+import LayoutFooter from '@/views/Layout/components/LayoutFooter.vue';
+</script>
+
 <template>
-    <div>
-        我是首页
-        <router-view></router-view>
-    </div>
+        <LayoutNav></LayoutNav>
+        <LayoutHeader></LayoutHeader>
+        <LayoutFooter></LayoutFooter>
 </template>
