@@ -6,7 +6,6 @@ const categoryList = ref([]);
 const getCategory = async () => {
     const res = await getCategoryAPI();
     categoryList.value = res.result;
-    console.log(categoryList.value);
 }
 
 onMounted(() => getCategory())
