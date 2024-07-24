@@ -5,12 +5,16 @@ import HomeBanner from "./components/HomeBanner.vue";
 import HomeCategory from "./components/HomeCategory.vue";
 import HomeProduct from "./components/HomeProduct.vue";
 
-import HomePanel from "./components/HomePanel.vue";
-
-import { useBannerStore } from "@/stores/banner";
+import { useBannerStore } from "@/stores/home";
 import { onMounted } from "vue";
 const bannerStore = useBannerStore();
-onMounted(() => bannerStore.getBanner())
+const NewList = useBannerStore();
+const HotList = useBannerStore();
+onMounted(() => {
+    bannerStore.getBanner(),
+    NewList.getNewList(),
+    HotList.getHotList()
+})
 </script>
 
 <template>

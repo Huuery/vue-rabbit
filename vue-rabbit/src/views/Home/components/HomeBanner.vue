@@ -1,6 +1,6 @@
 <script setup>
-import { useBannerStore } from '@/stores/banner'
-const BannerStore = useBannerStore()
+import { useBannerStore } from '@/stores/home';
+const BannerStore = useBannerStore();
 </script>
 
 
