@@ -7,13 +7,12 @@ import HomeProduct from "./components/HomeProduct.vue";
 
 import { useBannerStore } from "@/stores/home";
 import { onMounted } from "vue";
-const bannerStore = useBannerStore();
-const NewList = useBannerStore();
-const HotList = useBannerStore();
+const Store = useBannerStore();
 onMounted(() => {
-    bannerStore.getBanner(),
-    NewList.getNewList(),
-    HotList.getHotList()
+    Store.getBanner(),
+    Store.getNewList(),
+    Store.getHotList(),
+    Store.getGoodsList()
 })
 </script>
 
